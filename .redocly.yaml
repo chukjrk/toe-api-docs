@@ -6,48 +6,9 @@ lint:
     - recommended
   rules:
     no-unused-components: warning
-lint:
-  extends:
-    - recommended
-  plugins:
-    - './plugins/custom-rules.js'
-  rules:
-    tag-description: off
-    custom-rules/one-tag-rule: error
 referenceDocs:
-  showConsole: true
-  layout:
-    scope: section
-  routingStrategy: browser
+  htmlTemplate: ./docs/index.html
   theme:
-    logo:
-      gutter: 20px 30px 14px 30px
     colors:
-      text:
-        primary: '#333333'
-    typography:
-      headings:
-        fontFamily: Roboto
-      fontFamily: 'Roboto, Verdana, Geneva, sans-serif'
-      fontSize: 14px
-      code:
-        fontFamily: '"Courier New",monospace'
-        tokens:
-          token.property:
-            color: '#aofbaa'
-          string:
-            color: '#aofbaa'
-      rightPanelHeading:
-        color: white
-    rightPanel:
-      backgroundColor: '#263238'
-    links:
-      color: '#6CC496'
-  htmlTemplate: ./web/index.html
-  
-#   referenceDocs:
-#   htmlTemplate: ./docs/index.html
-#   theme:
-#     colors:
-#       primary:
-#         main: "#32329f"
+      primary:
+        main: "#32329f"
